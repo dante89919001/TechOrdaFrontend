@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+         *{
+            box-sizing:border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #344a72;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .header{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .header_button{
+           
+            width: 200px;
+            border: 0;
+            font-size: 1rem;
+            border-radius:5px;
+            background-color: #49c1a2;
+            padding: 10px;
+            color: white;
+            
+        }
+        .header_button:hover{
+            background-color:#37a08e;
+            cursor: pointer;
+        }
+        .main_title{
+            text-align: center;
+        }
+
+        /*Product list*/
+
+        .table{
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 3px solid #49c1a2;
+        font-size: 24px;
+        text-align: center;
+        }
+
+        .table_head > tr > th{
+        border: 3px solid #49c1a2;
+        margin: 20px;
+        }
+        .table_body > tr > td{
+        border: 3px solid #49c1a2;
+        padding: 20px;
+        max-width: 300px;
+        }
+
+        .table_body > tr > td > img:hover{
+        scale: 1.7;
+        transition: 1s;
+        }
+        .link_profile{
+        text-decoration: none;
+        color:black
+        }
+        .link_profile:hover{
+        color:rgb(255, 255, 255);
+        transition: 1s;
+        }
+        .list{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            border: 3px solid #49c1a2;
+           width: 1422px;
+           margin: 0 auto;
+        }
+        dt {
+    font-weight: bold;
+}
+
+
+dd {
+    font-size: .9rem;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_title">Список товаров</h1>
+        <a href="./RegForm.html"><button class="header_button">Выйти</button></a>
+    </header>
+    <main class="main">
+        <h2 class="main_title">Таблица товаров</h2>
+        <table class="table">
+            <thead class="table_head">
+                <tr>
+                    <th>Наименование товара</th>
+                    <th>Описание товара</th>
+                    <th>Цена</th>
+                    <th>Цвет</th>
+                    <th>Категория</th>
+                    <th>Изображение</th>
+                    <th>Заказчик</th>
+                </tr>
+            </thead>
+            <tbody class="table_body">
+                <tr>
+                    <td>Футболка</td>
+                    <td>Футболка с картинкой дракона, хлопковая</td>
+                    <td>5000&#8376;</td>
+                    <td>Черный</td>
+                    <td>Футболка</td>
+                    <td><img src="./img/dragon.jpg" alt="футболка с драконом" width="50px" height="50px"></td>
+                    <td>
+                       <a href="#"class="link_profile">Иван Стрижко(Технодом) </a> </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="list">
+            <ul>
+                <h2>Список товаров</h2>
+                <li>Футболки</li>
+                <li>Кофты</li>
+                <li>Куртки</li>
+                <li>Обувь</li>
+            </ul>
+            <ol type="I">
+                <h2>Список задач</h2>
+                <li>Заказать куртки</li>
+                <li>Оформить доставку</li>
+                <li>Оплатить доставку</li>
+                <li>Принять товар</li>
+            </ol>
+            <dl>
+                <h2>Стоимость к материалам</h2>
+                <dt>5000&#8376</dt>
+                <dd>Полиэстер</dd>
+
+                <dt>15000&#8376 </dt>
+                <dd>Хлопок</dd>
+
+                <dt>25000&#8376</dt>
+                <dd>Кожзам</dd>
+
+                <dt>40000&#8376</dt>
+                <dd>Кожа</dd>
+             
+            </dl>
+        </div>
+    </main>
+</body>
+</html>
