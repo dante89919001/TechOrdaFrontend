@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./upload.css">
+    <title>FormData</title>
+</head>
+<body>
+    <main class="form-container">
+        <section class="form-wrap">
+            <header class="form-header">
+            <h1>Отправка данных</h1>
+            </header>
+            <form class="form-content" method="POST">
+                
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" name="email" id="email" placeholder="Введите логин">
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password" placeholder="Введите пароль">
+                </div>
+                <div class="form-group">
+                    <label for="file">Выберите файл для отправки</label> 
+                    <input type="file" class="imgFile" multiple name="file">
+                </div>
+                <button id="submit" type="submit">Отправить данные</button>
+            </form>
+          <footer class="form-footer">
+            <p>
+                Отправляя форму вы соглашаетесь с 
+                <a href="#">Условиями использования</a> и <a href="#">Политикой конфедициальности</a>
+            </p>
+          </footer>
+        </section>
+    </main>
+</body>
+<script src="./src/upload.ts"></script>
+
+</html>

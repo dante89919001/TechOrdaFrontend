@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+  }
+
+  video {
+    display: none;
+  }
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+.linkToSecond{
+    position: absolute;
+    left: 90vw;
+    color: black;
+    z-index: 1000;
+    border-radius: 5px;
+    border: gray solid;
+    cursor: pointer;
+}
+.linkToSecond>a{
+    text-decoration: none;
+    color:black
+}
+.linkToSecond:hover{
+    background-color: bisque;
+}
